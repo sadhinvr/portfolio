@@ -204,8 +204,9 @@
             display: flex;
             column-gap: 30px;
             row-gap: 30px;
-            // width: 100vw;
-            // overflow-x: scroll;
+            width: 100%;
+            overflow-x: scroll;
+
 
             .project_box_last_gap {
                 display: none;
