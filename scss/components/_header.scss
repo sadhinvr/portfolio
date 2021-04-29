@@ -1,0 +1,75 @@
+.header {
+    background: $light_bg;
+    padding: 40px 0px;
+
+    .header_content {
+        @include flex();
+        justify-content: space-between;
+
+        .logo {
+            cursor: pointer;
+            display: block;
+        }
+
+        .ham_menu{
+            display: none;
+            svg{
+                width: 30px;
+                height: 30px;
+                path{
+                    fill:darken($text_color,10%);
+                }
+            }
+        }
+
+        .main_nav {
+            ul {
+                @include flex();
+
+                li {
+                    a {
+                        padding: 16px 26px;
+                        color: $primary_color;
+                    }
+                }
+            }
+        }
+
+        .right_nav {
+            @include flex();
+
+            .search_holder {
+                margin-top: 7px;
+                margin-right: 30px;
+                cursor: pointer;
+            }
+
+            .scheme {
+                margin-right: 30px;
+                position: relative;
+                cursor: pointer;
+                height: 30px;
+                width: 30px;
+
+                .scheme--dark,
+                .scheme--light {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    bottom: 0;
+                    transition: 1s opacity;
+                }
+
+                .scheme--light {
+                    opacity: 1;
+                }
+
+                .scheme--dark {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+}

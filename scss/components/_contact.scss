@@ -1,0 +1,70 @@
+.contact {
+    position: relative;
+    z-index: 9999;
+
+    .contact_holder {
+        max-width: 900px;
+        background: $light_bg;
+        border-radius: 10px;
+        box-shadow: 0 5px 30px rgba(#000, 0.2);
+        margin: 0 auto;
+
+        form {
+            padding: 20px 40px;
+            display: flex;
+            flex-direction: column;
+
+            h2{
+                color: $primary_color;
+                font-size: 2rem;
+            }
+
+            .form_grid {
+                display: grid;
+                grid-template-columns: auto auto;
+                column-gap: 30px;
+
+                .form_grid_flexbox {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            label {
+                margin: 15px 0;
+                font-family: $big_font;
+                color: $primary_color;
+                font-weight: 500;
+            }
+
+            input {
+                height: 45px;
+                margin-bottom: 15px;
+            }
+
+            .btn {
+                font-size: 16px;
+                align-self: flex-end;
+            }
+
+            .form_input {
+                font-family: inherit;
+                border: 1px solid rgba($text_color, 0.5);
+                padding: 0 10px;
+                color: $primary_color;
+            }
+
+            .form_input::placeholder {
+                color: rgba($text_color, .5);
+                font-size: 1.1em;
+                font-family: $big_font;
+            }
+
+            .form_input:focus {
+                outline: none;
+                color: $primary_color;
+                border-color: $text_color;
+            }
+        }
+    }
+}

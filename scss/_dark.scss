@@ -1,0 +1,69 @@
+body.dark {
+    background: $dark_bg1;
+
+    .header .header_content .right_nav .scheme {
+        .scheme--light{
+            opacity: 0;
+            visibility: hidden;
+        }
+        .scheme--dark {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .header .header_content .ham_menu svg path{
+        fill: #fff;
+    }
+
+    .header .header_content .main_nav ul li a{
+
+        color: lighten($text-color,30%);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #fff;
+    }
+
+    .hero,
+    header,
+    .projects,
+    .company {
+        background: $dark_bg2;
+
+    }
+
+    .project_bg {
+        background: $dark_bg1;
+
+        path {
+            fill: $dark_bg2;
+        }
+    }
+
+    .projects .projects_holder .project_boxes .project_box {
+        background: $dark_bg1;
+
+        &:hover {
+            box-shadow: 0 15px 40px rgba($yellow, .4);
+        }
+
+        &:first-child:hover {
+            box-shadow: 0 15px 40px rgba($pink, .4);
+        }
+
+        &:last-child:hover {
+            box-shadow: 0 15px 40px rgba($blue, .4);
+        }
+    }
+
+    .testimonial .testimonial_holder .testimonial_boxes .testimonial_box {
+        // box-shadow: none;
+        border: 1px solid $yellow;
+    }
+}

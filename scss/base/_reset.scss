@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: $t background-color;
+}
+
+// html{
+//     scroll-behavior: smooth;
+// }
+
+body {
+    color: $text_color;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $big_font;
+    color: $primary_color;
+    margin: .5em 0;
+    transition: .5s color;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1;
+
+    span {
+        color: $brand_color;
+    }
+}
+
+h2 {
+    font-size: 36px;
+
+}
+
+p {
+    line-height: 1.7;
+    letter-spacing: .02em;
+    margin: .5em 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    padding: 60px 0;
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="button"]:focus,
+input[type="submit"]:focus {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    line-height: 0;
+    outline: none;
+    color: #fff;
+}
+
+textarea {
+    max-width: 100%;
+}

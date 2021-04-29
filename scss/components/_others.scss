@@ -1,0 +1,41 @@
+.container {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+    // overflow: hidden;
+}
+
+.btn {
+    display: inline-block;
+    color: $fff;
+    padding: 16px 40px;
+    background: $brand_color;
+    border-radius: 30px;
+    box-shadow: $btn_shadow;
+    transition: $t box-shadow ,.1s transform;
+    backface-visibility: hidden;
+
+    &:hover {
+        
+        box-shadow: $btn_shadow_hover;
+        transform: translate3d(0, -1px, 0);
+
+    }
+}
+
+.slider_btn {
+    margin: 30px 0;
+
+    .slider--right {
+        margin-left: 15px;
+    }
+}
+
+.common_text {
+    max-width: 660px;
+    width: 100%;
+
+    &.middle_text {
+        margin: 0 auto;
+    }
+}
